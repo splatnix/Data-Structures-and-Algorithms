@@ -1,1 +1,44 @@
 Chapter 1 Python Premier
+- Python is a dynamically typed language, as ther eis no advance declaration associating an identifier with a particular data type.
+
+- Conditional Expressions
+	expr1 if condition else expr2
+
+	instead of writing the following:
+	if n >= 0:
+		x = n
+	else:
+		x = -n
+	above can be replaced by:
+	x = n if n >= 0 else -n
+
+- Comprehension Syntax
+	result = [expression for value in iterable if condition]
+	this is equivalent with:
+	result = []
+	for value in iterable:
+		if condition:
+			result.append(expression)
+
+	As a concrete example, instead of:
+	squares = []
+	for k in range(1, n+1):
+		squares.append(k*k)
+
+	this can be replaced by:
+	squares = [k*K for k in range (1, n+1)]
+
+	[ k k for k in range(1, n+1) ] list comprehension
+	{ k k for k in range(1, n+1) } set comprehension
+	( k k for k in range(1, n+1) ) generator comprehension
+	{ k : k k for k in range(1, n+1) } dictionary comprehension
+
+- Simultaneous Assignments
+	j, k = k, j
+
+	
+
+
+	
+	  
+
