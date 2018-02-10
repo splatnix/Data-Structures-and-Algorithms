@@ -1,0 +1,39 @@
+Chapter 2 Object-Oriented Programming
+
+- Each object is an instance of a class.
+- The class definition typically specifies instance variables, also known as data members, that the object contains, as well as the methods, also known as member functions, that the object can execute.
+
+2.2.1 Objected-Oriented Design Goals
+- Robustness
+- Adaptability
+- Reusability
+
+2.1.2 Object_Oriented Design Principles
+- Modularity: an organizing principle in which different components of a software system are divided into separate functional units.
+- Abstruction
+- Encapsulation
+
+2.2.3 Coding Style and Documentation
+- Classes should have a name that serves as a singular noun, and be capitalized (e.g., Date rather than date or Dates). When multiple words are concatenated to form a class name, the first letter of each word is capitalized (e.g., CreditCard)
+- Functions should be lowercase. If multiple words are combined, they should be separated by underscores (e.g., make_payment)
+- Identifiers that represent a value considered to be a constant are traditionally identified using all capital letters and with underscores to separate words (e.g., MAX_SIZE).
+- Python provides integrated support for embedding formal documentation directly in source code using a mechanism known as a docstring.
+	def scale(data, factor):
+		”””Multiply all entries of numeric data list by the given factor.
+
+		data	an instance of any mutable sequence type (such as a list) containing numeric elements
+		factor	a number that serves as the multiplicative factor for scaling ”””
+		for j in range(len(data)):
+			data[j] *= factor
+
+if name == __main__ : 
+	# perform tests...
+
+This will be executed when Python is invoked directly on that module, but not when the module is imported for use in a larger software project. 
+
+2.3 Class Definitions
+The Constructor
+- A user can create an instance of the CreditCard class using a syntax as:
+cc = CreditCard(John Doe, 1st Bank, 5391 0375 9387 5309, 1000)
+Internally, this results in a call to the specially named init method that serves as the constructor of the class. Its primary responsibility is to establish the state of a newly created credit card object with appropriate instance variables.
+
